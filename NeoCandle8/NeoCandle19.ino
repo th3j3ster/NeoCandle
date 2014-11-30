@@ -1,9 +1,9 @@
 // candle for Adafruit NeoPixel
-// 8 pixel version
+// 16 pixel version
 // by Tim Bartlett, December 2013
 
 #include <Adafruit_NeoPixel.h>
-#define PIN 2
+#define PIN 0
 
 // color variables: mix RGB (0-255) for desired yellow
 int redPx = 255;
@@ -26,7 +26,7 @@ int flickLow;
 int flutDelay;
 int flutLow;
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(8, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(16, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   flickerDepth = (burnDepth + flutterDepth) / 2.4;
